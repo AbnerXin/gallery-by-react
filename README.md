@@ -1,2 +1,3 @@
 # gallery-by-react
-First react app
+
+- You need to ensure all the Dependencies installed successfully.(except warning)
