@@ -12,10 +12,7 @@ html, body {
 
   background-color: #222;
 }
-//.img{
-//  position: absolute;
-//  z-index: 1;
-//}
+
 .content {
   @include dis_whole;
 }
@@ -31,11 +28,31 @@ html, body {
 
 /* image -- start*/
 .img-sec {
-  position: relative;
-  width: 100%;
-  height: 770px;
+  @include dis_whole;
   overflow: hidden;
-  background-color: #ddd;
+  background-color: #DDDDDD;
+
+  @at-root {
+    .img-figure {
+      @include abpos;
+      width: 320px;
+      height: 360px;
+      margin: 0;
+      padding: 40px;
+      box-sizing: border-box;
+      background-color: #fff;
+    }
+
+    figcaption {
+      text-align: center;
+      .img-title {
+        margin: 20px 0 0 0;
+        color: #a7a0a2;
+        font-size: 16px;
+      }
+    }
+  }
+
 }
 
 /*image -- end*/
