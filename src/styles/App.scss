@@ -21,7 +21,7 @@ html, body {
 .stage {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 770px;
 }
 
 /*stage--end*/
@@ -30,7 +30,8 @@ html, body {
 .img-sec {
   @include dis_whole;
   overflow: hidden;
-  background-color: #DDDDDD;
+  background-color: #ddd;
+  position: relative;
 
   @at-root {
     .img-figure {
@@ -41,6 +42,10 @@ html, body {
       padding: 40px;
       box-sizing: border-box;
       background-color: #fff;
+    }
+
+    .center-img {
+      text-align: center;
     }
 
     figcaption {
